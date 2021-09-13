@@ -30,8 +30,7 @@ elForm.addEventListener('keyup',function(){
     }
     if(elInput.value<5 && elhall.checked){
         elfalse.classList.remove('false');
-        eltrue.classList.add('true');
-       
+        eltrue.classList.add('true');  
     }
     else if(elInput.value>30){
         eltrue.classList.remove('true');
