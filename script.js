@@ -25,17 +25,17 @@ elForm.addEventListener('keyup',function(){
         elfalse.classList.remove('false');
     }
     if(elhall.checked && elrain.checked && elInput.value>=5 && elInput.value<=30){
-        eltrue.classList.add('true');
         elfalse.classList.remove('false');
+        eltrue.classList.add('true');
     }
     if(elInput.value<5 && elhall.checked){
         elfalse.classList.remove('false');
         eltrue.classList.add('true');
        
     }
-    else{
-        elfalse.classList.add('false');
+    else if(elInput.value>30){
         eltrue.classList.remove('true');
+        elfalse.classList.add('false');
     }
     
 })
